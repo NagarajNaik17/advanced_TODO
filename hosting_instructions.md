@@ -48,7 +48,7 @@ Render is excellent for hosting Express APIs. It offers a free tier for Web Serv
    - Click the **Advanced** tab or go to **Environment** after creation.
    - Add the following environment variable:
      - **Key**: `MONGODB_URI`
-     - **Value**: `mongodb+srv://nagaraj:8nJs1CeFjGon8S3P@cluster0.yatypy4.mongodb.net/lifeos?retryWrites=true&w=majority` *(Replace URL query details if required)*
+     - **Value**: `<mongourl>` *(Replace URL query details if required)*
 5. **Deploy**: Click **Create Web Service**. Render will install node packages, connect to MongoDB, and launch your server.
 6. **Note Your Backend URL**: Once successfully deployed, Render will show your live backend URL at the top left of the dashboard (e.g. `https://lifeos-backend.onrender.com`).
 
