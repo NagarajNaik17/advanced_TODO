@@ -105,7 +105,7 @@ Navigate to the `backend` folder:
 Create a `.env` file (which is done automatically in this workspace) and define variables:
 ```
 PORT=5000
-MONGODB_URI=mongodb+srv://nagaraj:8nJs1CeFjGon8S3P@cluster0.yatypy4.mongodb.net/lifeos?appName=Cluster0
+MONGODB_URI=<mongo url1>
 ```
 
 Install packages and seed database:
