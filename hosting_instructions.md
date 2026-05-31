@@ -7,7 +7,7 @@ This guide walks you through deploying your LifeOS application to the cloud for 
 ## Prerequisites
 1. **GitHub Repository**: Push your workspace folder (`TODO`) to a GitHub repository. The repository structure should contain the `frontend` and `backend` folders at the root.
 2. **MongoDB Atlas URI**: You already have your connection string:
-   `mongodb+srv://nagaraj:8nJs1CeFjGon8S3P@cluster0.yatypy4.mongodb.net/lifeos`
+   `<mongo url>`
 
 ---
 
