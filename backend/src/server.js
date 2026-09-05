@@ -32,10 +32,17 @@ app.use('/api/quotes', quoteRoutes);
 app.use('/api/achievements', achievementRoutes);
 app.use('/api/stats', statRoutes);
 
-// Health check endpoint
-app.get('/health', (req, res) => {
-  res.json({ status: 'OK', message: 'LifeOS Backend is active' });
-});
+// Health check endpoints for uptime & keep-alive monitoring (e.g. UptimeRobot, Render)
+const healthHandler = (req, res) => {
+  res.status(200).json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: Math.floor(process.uptime())
+  });
+};
+
+app.get('/health', healthHandler);
+app.get('/api/health', healthHandler);
 
 // 404 Fallback
 app.use((req, res, next) => {
